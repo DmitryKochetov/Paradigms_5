@@ -1,0 +1,7 @@
+%Rules
+sum([], 0).
+sum([X|Y],S) :-
+sum(Y,S1), S is X + S1.
+
+%Query
+sum([1,2,3,4,5], S)
